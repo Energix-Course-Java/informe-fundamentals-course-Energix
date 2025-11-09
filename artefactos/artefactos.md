@@ -1,7 +1,7 @@
 <div align="center"> 
 
 
-<img src="assets/upc-logo.png" alt="UPC Logo" width="200"/>
+<img src="assets/upc-logo.png" alt="UPC Logo" width="300"/>
 
 
 # UNIVERSIDAD PERUANA DE CIENCIAS APLICADAS
@@ -51,7 +51,7 @@
 
 </div>
 
-
+---
 
 ### Ciclo 2025-20
 
@@ -129,7 +129,7 @@ NRC 7401
 - Encalada Salazar, Alexis (u20211g491)
 - Torres Lavandera, Andrés Rodrigo (u202312557)
 
-**Fecha de entrega**: ## de noviembre de 2025
+**Fecha de entrega**: 9 de noviembre de 2025
 
 ### Lección 1: Tu Primer Héroe
 
