@@ -118,7 +118,7 @@ programación orientada a objetos. **¡No requiere descargas!** Solo abre tu nav
   | 1 | Tu Primer Héroe | [Replit](https://replit.com/@Yei1/Leccion1) |
   | 2 | Tu Primera Batalla | [Replit](https://replit.com/@ikerbarturen659/Leccion-2#src/main/java/Main.java) |
   | 3 | Múltiples Enemigos | [Replit](https://replit.com/@AlexisEncalada/Leccion-03?v=1) |
-  | 4 | Organiza tu Código | [Replit]() |
+  | 4 | Organiza tu Código | [Replit](https://replit.com/@mateox341/Leccion-4-Organizar-tu-Codigo) |
   | 5 | Programación Orientada a Objetos | [Replit](https://replit.com/@AndresTorresUPC/Leccion-5-Open-Source?v=1) |
   | PF | Proyecto Final: Juego Completo | [Replit](https://replit.com/@Yei1/PF-Complementary-Assignment#src/main/java/Main.java) |
 - Compartir: #JavaBeginners
@@ -133,7 +133,6 @@ Período 2025-20
 NRC 7401
 
 **Nombre del equipo**: Energix
-**Líder del equipo**: Barturen Panez, Iker Gabriel
 **Integrantes del equipo**: 
 - Huaman Olivos, Yeira Shari (u202210513)
 - Loechle Arias, Mateo Ítalo (u202215004)  
@@ -145,13 +144,15 @@ NRC 7401
 
 ### Lección 1: Tu Primer Héroe
 
+**Enlace de presentacion:** https://www.canva.com/design/DAG4KT93oQY/Ta6-UatVYLi779Wlouk8sQ/edit?utm_content=DAG4KT93oQY&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton
+
 **Enlace:** https://replit.com/@Yei1/Leccion1
 
 **Descripción**
 
 Esta lección introduce los conceptos básicos de variables y tipos de datos en Java. Los estudiantes aprenden a crear y mostrar un personaje con atributos básicos como nombre, vida, ataque y nivel.
 
-**Código (Main.java)**
+**Código (Leccion1.java)**
 
 ```java
 package com.lecciones;
@@ -200,7 +201,7 @@ public class Leccion1 {
 
 Esta lección muestra estructuras de decisión (if-else) y entrada por consola mediante la clase `Scanner`. Se presenta un pequeño juego de combate donde el jugador elige entre atacar o defender.
 
-**Código (Main.java)**
+**Código (Leccion2.java)**
 
 ```java
 package com.lecciones;
@@ -256,7 +257,7 @@ public class Leccion2 {
 
 Esta lección enseña el uso de bucles (`for` y `while`) y arrays. Los estudiantes crean una mazmorra con múltiples enemigos y aprenden a iterar sobre estructuras de datos.
 
-**Código (Main.java)**
+**Código (Leccion3.java)**
 
 ```java
 package com.lecciones;
@@ -317,76 +318,108 @@ public class Leccion3 {
 
 ### Lección 4: Organiza tu Código
 
-**Enlace:**
+**Enlace:** https://replit.com/@mateox341/Leccion-4-Organizar-tu-Codigo
 
 **Descripción**
 
 Esta lección introduce los métodos en Java para organizar y reutilizar código. Los estudiantes aprenden a crear funciones sin parámetros, con parámetros y que retornan valores, implementando un sistema de aventura RPG más estructurado.
 
-**Código (Main.java)**
+**Código (Leccion4.java)**
 
 ```java
+package com.lecciones;
 import java.util.Scanner;
+//metodos sin parametros
+// metodos con parametros
+//metodos que retornen valores
+public class Leccion4 {
 
-public class Main {
     static int vida = 100;
     static int oro = 0;
-    
+
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
-        
+
         mostrarBienvenida();
-        
+
         boolean jugando = true;
-        while (jugando) {
+
+        while (jugando && estaVivo()){
+
             mostrarMenu();
             int opcion = sc.nextInt();
-            
+
             if (opcion == 1) {
                 explorar();
-            } else if (opcion == 2) {
+            }else if (opcion == 2){
                 mostrarEstado();
-            } else if (opcion == 3) {
+            }else if (opcion == 3){
                 descansar();
-            } else if (opcion == 4) {
+            }else if (opcion == 4){
                 jugando = false;
             }
+
         }
-        
-        System.out.println("Gracias por jugar!");
+        System.out.println("Gracias por jugar. ¡Hasta luego!");
+
     }
-    
-    public static void mostrarBienvenida() {
-        System.out.println("=== AVENTURA RPG ===\n");
+    //metodos sin parametros
+
+    public static void mostrarBienvenida(){
+        System.out.println("====RPG NO LINEAL====");
     }
-    
-    public static void mostrarMenu() {
-        System.out.println("\n1. Explorar");
-        System.out.println("2. Ver estado");
+
+    public static void mostrarMenu(){
+        System.out.println("1. Explorar");
+        System.out.println("2. Mostrar estado");
         System.out.println("3. Descansar");
         System.out.println("4. Salir");
-        System.out.print("Elige: ");
+        System.out.print("Elige una opción: ");
     }
-    
-    public static void explorar() {
-        System.out.println("\nEncontraste un enemigo!");
-        vida = vida - 15;
-        oro = oro + 20;
-        System.out.println("Ganaste 20 oro!");
-        System.out.println("Vida: " + vida);
-    }
-    
-    public static void mostrarEstado() {
-        System.out.println("\n=== ESTADO ===");
+
+    public static void explorar(){
+        System.out.println("Te encontraste con un enemigo!!");
+        recibirDano(15);
+        ganarOro(20);
         System.out.println("Vida: " + vida);
         System.out.println("Oro: " + oro);
     }
-    
-    public static void descansar() {
-        vida = vida + 30;
-        if (vida > 100) vida = 100;
-        System.out.println("\nDescansaste. Vida: " + vida);
+
+    public static void mostrarEstado(){
+        System.out.println("Estado Actual del Jugador:");
+        System.out.println("Vida: " + vida);
+        System.out.println("Oro: " + oro);
+
     }
+
+    public static void descansar(){
+        vida = vida + 30;
+        if(vida > 100) vida = 100;
+        System.out.println("Descansaste, recuperaste : " + vida);
+    }
+
+    //metodos con parametros
+    public static void recibirDano(int danoRecibido) {
+        vida = vida - danoRecibido;
+        System.out.println("¡Recibiste " + danoRecibido + " puntos de daño!");
+    }
+
+    public static void ganarOro(int oroGanado) {
+        oro = oro + oroGanado;
+        System.out.println("¡Ganaste " + oroGanado + " de oro!");
+    }
+
+
+    //metodo que retorna
+
+    public static boolean estaVivo(){
+        if(vida > 0){
+            return true;
+        } else {
+            return false;
+        }
+    }
+
 }
 ```
 
@@ -407,7 +440,7 @@ public class Main {
 
 Esta lección introduce los conceptos fundamentales de POO en Java: clases, objetos, constructores y métodos. Los estudiantes crean clases `Heroe` y `Enemigo` para un sistema de combate más realista.
 
-**Código (Main.java)**
+**Código (Leccion5.java)**
 
 ```java
 package com.lecciones;
@@ -488,7 +521,7 @@ public class Leccion5 {
 
 El proyecto final integra todos los conceptos aprendidos en el curso: variables, estructuras de control, métodos, arrays y POO. Los estudiantes crean un juego RPG completo con múltiples niveles, sistema de experiencia y progresión del personaje.
 
-**Código (Main.java)**
+**Código (PF.java)**
 
 ```java
 package com.proyecto;
