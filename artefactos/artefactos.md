@@ -66,49 +66,44 @@ programación orientada a objetos. **¡No requiere descargas!** Solo abre tu nav
 **Público Objetivo**: Estudiantes de 12 a 17 años sin experiencia en programación
 **Prerrequisitos**: Ninguno
 **Herramientas necesarias**: **¡Solo tu navegador web!** (Chrome, Firefox, Safari, Edge)
-**Repositorio de Código Fuente**: [https://github.com/Energix-Course-Java/informe-fundamentals-course-Energix](https://github.com/Energix-Course-Java/java-fundamentals-course-Energix)
+**Repositorio de Código Fuente**: [Proyecto en GitHub](https://github.com/Energix-Course-Java/java-fundamentals-course-Energix)
 
 ## Secuencia de la Lección
 ### Lección 1: Tu Primer Héroe 
 - **Descripción**: Introduce los conceptos básicos de variables y tipos de datos en Java.
-- **Enlace**: [Ver la lección]
+- **Enlace**: [Ver la lección 1](https://youtu.be/R18My7LubCc?si=scIehEM-yIR2OzUa)
 - **Conclusiones clave**: Declaración de variables (String, int), operaciones aritméticas, concatenación de strings.
 - **Empieza a programar**: [Abrir Replit - Tu Primer Héroe](https://replit.com/@Yei1/Leccion1) 
 
 ### Lección 2: Tu Primera Batalla
 - **Descripción**: Aprende estructuras de decisión (if-else) y entrada del usuario con Scanner.
-- **Enlace**: [Ver la lección]
+- **Enlace**: [Ver la lección 2](https://youtu.be/aoJxEtbZ2mg?si=frQfnsHyKMnPtYfX)
 - **Conclusiones clave**: Condicionales if-else, uso de Scanner, interacción básica del usuario.
 - **Práctica**: [Clic para programar - Tu Primera Batalla](https://replit.com/@ikerbarturen659/Leccion-2#src/main/java/Main.java) 
 
 ### Lección 3: Múltiples Enemigos 
 - **Descripción**: Toma decisiones con if-else y repite tareas con bucles for y while.
-- **Enlace**: [Ver la lección]
+- **Enlace**: [Ver la lección 3](https://youtu.be/wAdXUb0jibo?si=HorVP5opGVw-e5i7)
 - **Conclusiones clave**: Arrays, bucle for para iteración, bucle while para combate.
 - **Práctica**: [Clic para programar - Múltiples Enemigos](https://replit.com/@AlexisEncalada/Leccion-03?v=1) 
 
 ### Lección 4: Organiza tu Código 
 - **Descripción**: Crea código reutilizable con métodos y organiza tu programa de manera eficiente.
-- **Enlace**: [Ver la lección]
+- **Enlace**: [Ver la lección 4](https://youtu.be/nIdYP1Xavs4?si=eeWr6T6aT4ckNgVc)
 - **Conclusiones clave**: Métodos sin parámetros, variables estáticas, organización del código.
 - **Práctica**: [Haz clic para practicar - Organiza tu Código](https://replit.com/@your-lesson4) 
 
 ### Lección 5: Programación Orientada a Objetos
 - **Descripción**: Construye clases con atributos/métodos y crea un programa POO básico.
-- **Enlace**: [Ver la lección]
+- **Enlace**: [Ver la lección 5](https://youtu.be/U_DeWAAqXic?si=drv5oicSIzSwC1MV)
 - **Conclusiones clave**: Clases, objetos, constructores, métodos que retornan valores.
 - **Proyecto**: [Crea tu aplicación POO](https://replit.com/@AndresTorresUPC/Leccion-5-Open-Source?v=1) 
 
 ### Proyecto Final: Juego Completo 
 - **Descripción**: Integra todos los conceptos aprendidos en un juego RPG completo con múltiples niveles.
-- **Enlace**: [Ver el proyecto final]
+- **Enlace**: [Ver el proyecto final](https://youtu.be/l_DA_KE5FkU?si=uyKpRjxE38V8hZjB)
 - **Características**: Personalización del héroe, sistema de niveles, variedad de enemigos, mecánicas de combate.
-- **Proyecto final**: [Crea tu juego completo](https://replit.com/@Yei1/PF-Complementary-Assignment#src/main/java/Main.java) 
-
-### Consejos y próximos pasos 
-- **Descripción**: Mejores prácticas, errores comunes y dónde aprender más.
-- **Enlace**: [Ver consejos finales]
-- **Consejos clave**: Depurar errores, explorar la documentación de Oracle Java.
+- **Proyecto final**: [Crea tu juego completo](https://replit.com/@Yei1/PF-Complementary-Assignment#src/main/java/Main.java)
 
 ## Recursos adicionales
 - **Código fuente completo**: [Repositorio de GitHub](https://github.com/Energix-Course-Java/java-fundamentals-course-Energix)
@@ -122,7 +117,7 @@ programación orientada a objetos. **¡No requiere descargas!** Solo abre tu nav
   | 5 | Programación Orientada a Objetos | [Replit](https://replit.com/@AndresTorresUPC/Leccion-5-Open-Source?v=1) |
   | PF | Proyecto Final: Juego Completo | [Replit](https://replit.com/@Yei1/PF-Complementary-Assignment#src/main/java/Main.java) |
 - Compartir: #JavaBeginners
-  **¡Gracias por completar el curso!**
+
 ---
 
 ## 👥 Elaboración
